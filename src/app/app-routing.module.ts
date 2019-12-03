@@ -115,6 +115,12 @@ const routes: Routes = [
         loadChildren:
           "./features/mastersetup/mastersetup.module#MastersetupModule",
         data: { pageTitle: "mastersetup" }
+      },
+      {
+        path: "operational",
+        loadChildren:
+          "./features/operational/operational.module#OperationalModule",
+        data: { pageTitle: "mastersetup" }
       }
     ]
   },

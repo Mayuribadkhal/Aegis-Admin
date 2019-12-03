@@ -135,3 +135,12 @@
     background: #353D4B;
     color:white;
 }
+
+.txt-color-green {
+    color: #cfd1d5!important;
+}
+
+.smart-style-1 #header {
+    background-image: none;
+    background-color: #415676;
+}
