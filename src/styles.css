@@ -1,0 +1,137 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* #GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700");
+.content__middle {
+    overflow: auto;
+    text-align: center;
+    height: 70px;
+}
+
+.mid_toll_free {
+    display: inline-block;
+    width: auto;
+    position: relative;
+    height: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 9px;
+}
+
+.phone {
+    padding: 0px 5px;
+    height: 27px;
+    width: 27px;
+    margin-top: 0px;
+    margin-right: 10px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #FD9634;
+    font-size: 17px;
+}
+
+.color-orange {
+    color: #FD9634;
+}
+
+.fleft {
+    float: left;
+}
+.toll_number {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.fright {
+    float: left;
+}
+
+.smart-style-0 .toll_number.num {
+    color: #3276b1;
+    font-weight: bold;
+}
+
+.toll_number.num {
+    color: #f3cc1b;
+    font-weight: bold;
+}
+
+.toll_number {
+    font-size: 18px;
+    margin-bottom: 15px;
+  
+}
+
+.login_toll {
+    color: #4f97d6!important;
+}
+
+.smart-style-1 #logo-group {
+    background: none!important;
+}
+
+#extr-page #header #logo {
+    margin-top: 5px!important;
+    margin-left: 0;
+}
+
+#logo {
+    display: inline-block;
+    width: 175px;
+    margin-top: 4px!important;
+    margin-left: 9px;
+}
+
+.mar-top{
+    margin-top:27px;
+}
+
+
+.toll {
+    margin: 11px 0;
+  }.welcome{margin
+  :16px 0;}
+  
+  
+  
+  
+  #header>:first-child, aside {
+      width: 77px;}
+  #logo {width: 77px;
+    margin-top: 3px !important;
+    margin-left: 9px;
+  }
+  #logo img {
+    width: 44px;
+    height: auto;
+    padding-left: 3px;
+  }
+
+  .menu-on-top nav ul ul, .menu-on-top nav ul ul ul {
+
+    width: 233px!important;
+
+}
+
+.menu-on-top .menu-item-parent {
+    max-width: 100px!important;
+    min-width: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 13px;
+}
+
+.smart-style-1 .jarviswidget-color-blueDark>header {
+    background: #353D4B!important;
+    border-color: #353D4B!important;
+}
+
+.jarviswidget>header {
+    /* color: #333; */
+    border: 1px solid #353D4B;
+    background: #353D4B;
+    color:white;
+}

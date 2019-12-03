@@ -1,0 +1,100 @@
+<div id="content">
+    <sa-widgets-grid>
+      <div class="row">
+  
+        <!-- NEW WIDGET START -->
+        <article class="col-sm-6 col-sm-offset-3 ">
+  
+          <!-- Widget ID (each widget will need unique ID)-->
+          <div sa-widget [colorbutton]="false" [editbutton]="false" [togglebutton]="false" [deletebutton]="false"
+                     [fullscreenbutton]="false" [custombutton]="false" [sortable]="false" color="blueDark">
+                     <header>
+                        <div class="text-center">
+                      <span class="widget-icon"> <i class="fa fa-database txt-color-green"></i> </span>
+                      <h2>&nbsp;Status Mapping</h2>
+                    </div>
+                    </header>
+            <div>
+              <div class="widget-body">
+  
+                  <div class="row">
+                      <div class="col-sm-4">
+                          <div class="form-group">
+                              <label for="sel1">Lead Type<span class="errorMessage" style="color:red;">*</span></label>
+                              <select class="form-control" id="sel1" ng-options="s.StateCode as s.StateDesc for s in getState1" ng-model="dist.StateCode" required>
+                                  <option value="" selected>--Select Lead Type--</option>
+
+                              </select>
+                          </div>
+                      </div>
+
+
+                      <div class="col-sm-4">
+                          <div class="form-group">
+                              <label for="sel1">Designation<span class="errorMessage" style="color:red;">*</span></label>
+                              <select class="form-control" id="sel1" ng-options="s.StateCode as s.StateDesc for s in getState1" ng-model="dist.StateCode" required>
+                                  <option value="" selected>--Select --</option>
+
+                              </select>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="row">
+                      <div class="col-sm-12">
+                      <h6>Select Status</h6>
+                      </div>
+                      <div class="col-sm-12">
+                          <div class="row">
+                              <div class="col-sm-12">
+                                  <div class="table-responsive">
+                                      <table class="table tbl">
+                                          <thead>
+                                              <tr>
+                                                  <th class="text-center" width="60">Select</th>
+                                                  <th class="text-center" width="200">Code</th>
+                                                  <th class="text-center">Status</th>
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                              <tr>
+                                                  <!--<td class="text-center"><butto class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span></button></td>
+              <td class="text-center">Not Worked</td>
+              <td class="text-center">Client</td>-->
+                                              </tr>
+
+                                          </tbody>
+                                      </table>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+
+
+                  </div>
+  
+                  <hr class="hr_basic" />
+                  <div class="row ">
+                    <div class="col-sm-12 ">
+                        <a class="btn btn-default pull-right" routerLink="/mastersetup/status-mapping-list">
+                            <i class="glyphicon glyphicon-arrow-left"></i> &nbsp;&nbsp;Back
+                        </a>
+                        <button class=" btn btn-primary pull-right" type="submit" style="margin-right:10px;" >
+                            <i class="glyphicon glyphicon-send"></i> &nbsp;&nbsp;Submit
+                        </button>
+                        <!-- <button type="button" name="" class="btn btn-primary btn-right pull-right" *ngIf="loadershow">
+                            <i class="fa fa-cog fa-spin fa-fw" aria-hidden="true"></i> Loading
+                        </button> -->
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+  
+  
+    </sa-widgets-grid>
+  </div>
+  

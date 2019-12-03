@@ -1,0 +1,80 @@
+<div id="content">
+  <sa-widgets-grid>
+    <div class="row">
+
+      <!-- NEW WIDGET START -->
+      <article class="col-sm-6 col-sm-offset-3">
+
+        <!-- Widget ID (each widget will need unique ID)-->
+        <div sa-widget [colorbutton]="false" [editbutton]="false" [togglebutton]="false" [deletebutton]="false"
+                   [fullscreenbutton]="false" [custombutton]="false" [sortable]="false" color="blueDark">
+                   <header>
+                      <div class="text-center">
+                    <span class="widget-icon"> <i class="fa fa-database txt-color-green"></i> </span>
+                    <h2>&nbsp;Application</h2>
+                  </div>
+                  </header>
+          <div>
+            <div class="widget-body">
+
+              <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="sel1">Application Flag<span style="color:red;">*</span></label>
+                        <input type="text" class="form-control" placeholder="Enter Application Flag"  />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="sel1">Application Type<span style="color:red;">*</span></label>
+                        <select class="form-control" id="sel1" required>
+                            <option value="" selected>--Select--</option>
+               
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="sel1">Application Name<span style="color:red;">*</span></label>
+                        <input type="text" class="form-control" placeholder="Enter Application Name"  required />
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                  <label class="checkbox-inline">
+                      <input type="checkbox" value="" >Is Active?
+                  </label>
+              </div>
+          </div>
+                <hr class="hr_basic" />
+                    <div class="row ">
+                        <div class="col-sm-10" ng-show="divshow">
+                            <button class="pull-right btn btn-primary" type="submit" >
+                                <i class="glyphicon glyphicon-send"></i> &nbsp;&nbsp;Submit
+                            </button>
+                        </div>
+                        <div class="col-sm-1" ng-show="divshow">
+                            <a class="btn btn-default" routerLink="/master/application-list">
+                                <i class="glyphicon glyphicon-arrow-left"></i> &nbsp;&nbsp;Back
+                            </a>
+                        </div>
+                        <!-- <div class="col-sm-10" ng-show="divhide">
+                            <button type="button" name="" class="pull-right btn btn-primary">
+                                <i class="fa fa-cog fa-spin fa-fw" aria-hidden="true"></i> Loading
+                            </button>
+                        </div> -->
+                    </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+
+  </sa-widgets-grid>
+</div>

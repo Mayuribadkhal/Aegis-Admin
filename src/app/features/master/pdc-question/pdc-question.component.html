@@ -1,0 +1,116 @@
+<div id="content">
+  <sa-widgets-grid>
+    <div class="row">
+
+      <!-- NEW WIDGET START -->
+      <article class="col-sm-8 col-sm-offset-2">
+
+        <!-- Widget ID (each widget will need unique ID)-->
+        <div sa-widget [colorbutton]="false" [editbutton]="false" [togglebutton]="false" [deletebutton]="false"
+                   [fullscreenbutton]="false" [custombutton]="false" [sortable]="false" color="blueDark">
+                   <header>
+                      <div class="text-center">
+                    <span class="widget-icon"> <i class="fa fa-database txt-color-green"></i> </span>
+                    <h2>&nbsp;PDC Question</h2>
+                  </div>
+                  </header>
+          <div>
+            <div class="widget-body">
+
+              <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label>Question Description<span class="errorMessage" style="color:red;">*</span></label>
+                        <input type="text" id="rolecodeid" class="form-control" placeholder="Enter Question Description" ng-model="PDCQuestion.Qdesc"  required />
+                    </div>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="sel1">Language<span class="errorMessage" style="color:red;">*</span></label>
+                            <select ng-options="l.LangCode as l.LangDesc for l in GetLanguage" class="form-control" ng-model="PDCQuestion.LanguageCode" required>
+                                <option value="" selected>--Select Language--</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="sel1">Is Mandatory<span class="errorMessage" style="color:red;">*</span></label>
+                            <select ng-options="m.IsMandatory as m.IsMandatoryDesc for m in GetIsMandatory" class="form-control" id="ddl11" ng-model="PDCQuestion.IsMandatory" required>
+                                <option value="" selected>--Select --</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="sel1">Inspection Type<span class="errorMessage" style="color:red;">*</span></label>
+                            <select ng-options="i.InspType as i.IsnpDesc for i in GetInspType" class="form-control" id="ddl11" ng-model="PDCQuestion.InspType" required>
+                                <option value="" selected>--Select Type--</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="sel1">Correct Answer<span class="errorMessage" style="color:red;">*</span></label>
+                        <select ng-options="a.CorrectAnswer as a.AnsDesc for a in GetCorrectAns" class="form-control" ng-model="PDCQuestion.CorrectAnswer" required>
+                            <option value="" selected>-- Select --</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="sel1">Control Type<span class="errorMessage" style="color:red;">*</span></label>
+                        <select ng-options="c.AnsCntrlType as c.AnsCntrlTypeDesc for c in GetControlType" class="form-control" ng-model="PDCQuestion.AnsCntrlType" required>
+                            <option value="" selected>--Select --</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label>Control Parameter<span class="errorMessage" style="color:red;"></span></label>
+                        <input type="text" ng-model="PDCQuestion.cntrlString" class="form-control" placeholder="Control Parameter" required />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label>Points<span class="errorMessage" style="color:red;">*</span></label>
+                        <input type="text" ng-model="PDCQuestion.Rating" required class="form-control" placeholder="Enter Points" required />
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group mar-top" >
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="" ng-true-value="'Y'" ng-false-value="'N'" ng-model="PDCQuestion.Isactive">Is Active?
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+                <hr class="hr_basic" />
+                <div class="row ">
+                  <div class="col-sm-12 ">
+                      <a class="btn btn-default pull-right" routerLink="/master/pdc-question-list">
+                          <i class="glyphicon glyphicon-arrow-left"></i> &nbsp;&nbsp;Back
+                      </a>
+                      <button class=" btn btn-primary pull-right" type="submit" style="margin-right:10px;" >
+                          <i class="glyphicon glyphicon-send"></i> &nbsp;&nbsp;Submit
+                      </button>
+                      <!-- <button type="button" name="" class="btn btn-primary btn-right pull-right" *ngIf="loadershow">
+                          <i class="fa fa-cog fa-spin fa-fw" aria-hidden="true"></i> Loading
+                      </button> -->
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+
+  </sa-widgets-grid>
+</div>

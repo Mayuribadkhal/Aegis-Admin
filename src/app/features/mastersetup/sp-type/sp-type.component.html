@@ -1,0 +1,65 @@
+<div id="content">
+  <sa-widgets-grid>
+    <div class="row">
+
+      <!-- NEW WIDGET START -->
+      <article class="col-sm-6 col-sm-offset-3">
+
+        <!-- Widget ID (each widget will need unique ID)-->
+        <div sa-widget [colorbutton]="false" [editbutton]="false" [togglebutton]="false" [deletebutton]="false"
+                   [fullscreenbutton]="false" [custombutton]="false" [sortable]="false" color="blueDark">
+                   <header>
+                      <div class="text-center">
+                    <span class="widget-icon"> <i class="fa fa-database txt-color-green"></i> </span>
+                    <h2>&nbsp;SP Type</h2>
+                  </div>
+                  </header>
+          <div>
+            <div class="widget-body">
+
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                        <label>SP Type<span class="errorMessage" style="color:red;">*</span></label>
+                        <!-- pattern="[a-zA-Z]+" ng-pattern-restrict-->
+                        <input type="text" class="form-control" placeholder="Enter SP Type" ng-model="dist.DistrictName" required />
+                    </div>
+                </div>
+                </div>
+
+                <div class="row">
+                 
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                          <label class="checkbox-inline">
+                              <input type="checkbox" value="" >Is Active?
+                          </label>
+
+
+                      </div>
+                  </div>
+                </div>
+
+                <hr class="hr_basic" />
+                <div class="row ">
+                  <div class="col-sm-12 ">
+                      <a class="btn btn-default pull-right" routerLink="/mastersetup/sp-type-list">
+                          <i class="glyphicon glyphicon-arrow-left"></i> &nbsp;&nbsp;Back
+                      </a>
+                      <button class=" btn btn-primary pull-right" type="submit" style="margin-right:10px;" >
+                          <i class="glyphicon glyphicon-send"></i> &nbsp;&nbsp;Submit
+                      </button>
+                      <!-- <button type="button" name="" class="btn btn-primary btn-right pull-right" *ngIf="loadershow">
+                          <i class="fa fa-cog fa-spin fa-fw" aria-hidden="true"></i> Loading
+                      </button> -->
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+
+  </sa-widgets-grid>
+</div>

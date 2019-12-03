@@ -1,0 +1,418 @@
+<aside id="left-panel">
+
+  <!-- User info -->
+  <sa-login-info></sa-login-info>
+  <!-- end user info -->
+
+  <nav>
+    <!-- NOTE: Notice the gaps after each icon usage <i></i>..
+    Please note that these links work a bit different than
+    traditional href="" links. See documentation for details.
+    -->
+
+    <ul saSmartMenu>
+      <li>
+        <a title="Dashboard" routerLink="/dashboard/analytics"><i class="fa fa-lg fa-fw fa-home"></i> <span
+          class="menu-item-parent">Dashboard</span></a>
+      </li>
+
+      <li>
+        <a href="#"><i class="fa fa-lg fa-fw fa-database "></i> <span class="menu-item-parent">Master</span></a>
+        <ul>
+          <li routerLinkActive="active">
+            <a routerLink="/master/state-list"><i class="fa fa-lg fa-fw fa-cube"></i>
+            State Master</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/master/city-list"><i class="fa fa-lg fa-fw fa-cube"></i>
+             City Master</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/master/area-list"><i class="fa fa-lg fa-fw fa-cube"></i>
+             Area Master</a>
+          </li>
+          <!-- <li routerLinkActive="active">
+            <a routerLink="/master/bank-list"><i class="fa fa-lg fa-fw fa-cube"></i>
+             Bank Master</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/master/paymentmode-list"><i class="fa fa-lg fa-fw fa-cube"></i>
+             Payment Mode</a>
+          </li> -->
+          <li routerLinkActive="active">
+            <a routerLink="/master/transportmode-list"><i class="fa fa-lg fa-fw fa-cube"></i>
+            Transport Mode</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/master/department-list"><i class="fa fa-lg fa-fw fa-cube"></i>
+          Department </a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/master/userrole-list"><i class="fa fa-lg fa-fw fa-cube"></i>
+          Designation </a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/master/application-list"><i class="fa fa-lg fa-fw fa-cube"></i>
+           Application Master</a>
+          </li>
+          <!-- <li routerLinkActive="active">
+            <a routerLink="/master/zone-list"><i class="fa fa-lg fa-fw fa-cube"></i>
+             Zone Master</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/master/region-list"><i class="fa fa-lg fa-fw fa-cube"></i>
+             Region Master</a>
+          </li> -->
+          <!-- <li routerLinkActive="active">
+            <a routerLink="/master/pdc-question-list"><i class="fa fa-lg fa-fw fa-cube"></i>
+             PDC Question Master</a>
+          </li> -->
+          <!-- <li routerLinkActive="active">
+            <a routerLink="/master/manufacture-list"><i class="fa fa-lg fa-fw fa-cube"></i>
+             Manufacture Master</a>
+          </li> -->
+          <li routerLinkActive="active">
+            <a routerLink="/master/plant-list"><i class="fa fa-lg fa-fw fa-cube"></i>
+             Plant Master</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/master/cylinderProvider-list"><i class="fa fa-lg fa-fw fa-cube"></i>
+             Cyninder Providers Master</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/master/godown-list"><i class="fa fa-lg fa-fw fa-cube"></i>
+             Godown</a>
+          </li>
+          
+        </ul>
+      </li>
+
+      <li>
+        <a href="#"><i class="fa fa-lg fa-fw fa-database"></i> <span
+          class="menu-item-parent">Master Setup</span></a>
+        <ul>
+            <li routerLinkActive="active">
+                <a routerLink="/mastersetup/lead-category-list"><i class="fa fa-lg fa-fw fa-cube"></i> Lead Category</a>
+              </li>
+          <li routerLinkActive="active">
+            <a routerLink="/mastersetup/source-list"><i class="fa fa-lg fa-fw fa-cube"></i> Source</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/mastersetup/distributortype-list"><i class="fa fa-lg fa-fw fa-cube"></i> Distributor Type</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/mastersetup/clienttype-list"><i class="fa fa-lg fa-fw fa-cube"></i> Client Type</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/mastersetup/client-cunsum-type-list"><i class="fa fa-lg fa-fw fa-cube"></i> Client Cunsumption Type</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/mastersetup/category-by-volume-list"><i class="fa fa-lg fa-fw fa-cube"></i> Category By Volume</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/mastersetup/client-service-type-list"><i class="fa fa-lg fa-fw fa-cube"></i> Client Service Type</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/mastersetup/contractual-list"><i class="fa fa-lg fa-fw fa-cube"></i> Contractual / Non Contractual</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/mastersetup/pos-list"><i class="fa fa-lg fa-fw fa-cube"></i> POS Type</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/mastersetup/ro-type-list"><i class="fa fa-lg fa-fw fa-cube"></i> RO Type</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/mastersetup/sp-type-list"> <i class="fa fa-lg fa-fw fa-cube"></i> SP Type</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/mastersetup/firm-type-list"><i class="fa fa-lg fa-fw fa-cube"></i> Firm Type</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/mastersetup/type-call-list"><i class="fa fa-lg fa-fw fa-cube"></i> Type Of Call                                                                                                                                              </a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/mastersetup/action-list"><i class="fa fa-lg fa-fw fa-cube"></i> Action Taken</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/mastersetup/status-list"><i class="fa fa-lg fa-fw fa-cube"></i> Status</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/mastersetup/status-mapping-list"><i class="fa fa-lg fa-fw fa-cube"></i> Status Mapping</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/mastersetup/dropped-reason-list"><i class="fa fa-lg fa-fw fa-cube"></i> Dropped Reason</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/mastersetup/work-request-list"><i class="fa fa-lg fa-fw fa-cube"></i> Work Request Nature</a>
+          </li>
+          <!-- <li routerLinkActive="active">
+            <a routerLink="/graphs/highchart-tables"><i class="fa fa-lg fa-fw fa-cube"></i> GST State</a>
+          </li> -->
+          <li routerLinkActive="active">
+            <a routerLink="/mastersetup/holiday-list"><i class="fa fa-lg fa-fw fa-cube"></i> Holiday Master</a>
+          </li>
+        </ul>
+      </li>
+
+
+
+
+      <!-- <li>
+        <a href="#"><i class="fa fa-lg fa-fw fa-file"></i> <span
+          class="menu-item-parent">Operational</span></a>
+        <ul>
+       
+          <li>
+            <a href="#"><i class="fa fa-lg fa-fw fa-cube"></i> Channel Partner</a>
+            <ul>
+              <li routerLinkActive="active">
+                <a routerLink="/ui/icons/font-awesome"><i class="fa fa-lg fa-fw fa-cube"></i>Manage Channel Partner</a>
+              </li>
+              <li routerLinkActive="active">
+                <a routerLink="/ui/icons/glyphicons"><i class="fa fa-lg fa-fw fa-cube"></i>
+                  Connect Distributor</a>
+              </li>
+              <li routerLinkActive="active">
+                <a routerLink="/ui/icons/flags"><i class="fa fa-lg fa-fw fa-cube"></i> Add/Update Hierarchy To Distributor</a>
+              </li>
+              <li routerLinkActive="active">
+                <a routerLink="/ui/icons/flags"><i class="fa fa-lg fa-fw fa-cube"></i> Manage Profile</a>
+              </li>
+              <li routerLinkActive="active">
+                <a routerLink="/ui/icons/flags"><i class="fa fa-lg fa-fw fa-cube"></i> Other Settings</a>
+              </li>
+              <li routerLinkActive="active">
+                <a routerLink="/ui/icons/flags"><i class="fa fa-lg fa-fw fa-cube"></i> Pre-Login</a>
+              </li>
+              <li routerLinkActive="active">
+                <a routerLink="/ui/icons/flags"><i class="fa fa-lg fa-fw fa-cube"></i> Hierarchy Details of Distributor</a>
+              </li>
+              <li routerLinkActive="active">
+                <a routerLink="/ui/icons/flags"><i class="fa fa-lg fa-fw fa-cube"></i> Activate/Deacivate Distributor</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a><i class="fa fa-lg fa-fw fa-cube"></i> Product</a>
+            <ul>
+              <li routerLinkActive="active">
+                <a routerLink="/ui/icons/font-awesome"><i class="fa fa-lg fa-fw fa-cube"></i> Product Category</a>
+              </li>
+              <li routerLinkActive="active">
+                <a routerLink="/ui/icons/glyphicons"><i class="fa fa-lg fa-fw fa-cube"></i>
+                  Product Subcategory</a>
+              </li>
+              <li routerLinkActive="active">
+                <a routerLink="/ui/icons/flags"><i class="fa fa-lg fa-fw fa-cube"></i> Product</a>
+              </li>
+        
+             
+            </ul>
+          </li>
+          <li>
+            <a><i class="fa fa-lg fa-fw fa-cube"></i> Hierarchy</a>
+            <ul>
+              <li routerLinkActive="active">
+                <a routerLink="/ui/icons/font-awesome"><i class="fa fa-lg fa-fw fa-cube"></i> Hierarchy</a>
+              </li>
+              <li routerLinkActive="active">
+                <a routerLink="/ui/icons/glyphicons"><i class="fa fa-lg fa-fw fa-cube"></i>
+                  Update Hierarchy</a>
+              </li>
+              <li routerLinkActive="active">
+                <a routerLink="/ui/icons/flags"><i class="fa fa-lg fa-fw fa-cube"></i> Update Employee To Hierarchy</a>
+              </li>
+              <li routerLinkActive="active">
+                <a routerLink="/ui/icons/flags"><i class="fa fa-lg fa-fw fa-cube"></i> Manage FR Hierarchy</a>
+              </li>
+            </ul>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/ui/nestable-lists"><i class="fa fa-lg fa-fw fa-cube"></i> Return Refill Remarks</a>
+          </li>
+           <li routerLinkActive="active">
+            <a routerLink="/ui/typography"><i class="fa fa-lg fa-fw fa-cube"></i> Block Smart Card</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/ui/typography"><i class="fa fa-lg fa-fw fa-cube"></i> Refill Prices</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/ui/typography"><i class="fa fa-lg fa-fw fa-cube"></i> Price Allocation</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/ui/typography"><i class="fa fa-lg fa-fw fa-cube"></i> Upload Cylinder Data</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/ui/typography"><i class="fa fa-lg fa-fw fa-cube"></i> Cylinder Master</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-lg fa-fw fa-bar-chart"></i> <span
+          class="menu-item-parent">Reports</span></a>
+        <ul>
+       
+          <li>
+            <a href="#"><i class="fa fa-lg fa-fw fa-cube"></i> View Hierarchy</a>
+          </li>
+          <li>
+            <a>Monthly Reports</a>
+            <ul>
+              <li routerLinkActive="active">
+                <a routerLink="/ui/icons/font-awesome"><i class="fa fa-lg fa-fw fa-cube"></i> Refill Delivery Count</a>
+              </li>
+              <li routerLinkActive="active">
+                <a routerLink="/ui/icons/glyphicons"><i class="fa fa-lg fa-fw fa-cube"></i>
+                  Booking Count</a>
+              </li>
+            </ul>
+          </li>
+        
+           <li routerLinkActive="active">
+            <a routerLink="/ui/typography"> <i class="fa fa-lg fa-fw fa-cube"></i> Refill Weight Report</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/ui/typography"><i class="fa fa-lg fa-fw fa-cube"></i> Consumer Base Location Report</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/ui/typography"><i class="fa fa-lg fa-fw fa-cube"></i> Pending Cash Memo Report</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/ui/typography"><i class="fa fa-lg fa-fw fa-cube"></i> Outward </a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/ui/typography"><i class="fa fa-lg fa-fw fa-cube"></i>  Inward </a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/ui/typography"><i class="fa fa-lg fa-fw fa-cube"></i> Vehicle Fitness  </a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/ui/typography"><i class="fa fa-lg fa-fw fa-cube"></i> Distributor Credit Debit Details  </a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/ui/typography"> <i class="fa fa-lg fa-fw fa-cube"></i> New Connection Request Summary </a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/ui/typography"> <i class="fa fa-lg fa-fw fa-cube"></i> New Connection Request Details </a>
+          </li>
+        </ul>
+      </li>
+
+
+
+
+
+      <li>
+        <a href="#">
+          <i class="fa fa-lg fa-fw fa-bar-chart"></i> <span
+          class="menu-item-parent">Analytical</span></a>
+        <ul>
+          <li routerLinkActive="active">
+            <a routerLink="/app-views/projects"><i class="fa fa-lg fa-fw fa-cube"></i>
+              AEGIS Refill Transaction Status</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/app-views/blog"><i class="fa fa-lg fa-fw fa-cube"></i>Digital Payment Analysis</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/app-views/gallery"><i class="fa fa-lg fa-fw fa-cube"></i>
+              Contribution in Digital Payments</a>
+          </li>
+
+          <li>
+            <a href="#"><i class="fa fa-comments"></i> AEGIS Card Sales Potential</a>
+          </li>
+         
+              <li routerLinkActive="active">
+                <a routerLink="/app-views/forum/general-view"><i class="fa fa-lg fa-fw fa-cube"></i>
+                  AEGIS Potential </a>
+              </li>
+              <li routerLinkActive="active">
+                <a routerLink="/app-views/forum/topic-view"><i class="fa fa-lg fa-fw fa-cube"></i>
+                  Digital Payments On-boarding Potential</a>
+              </li>
+              <li routerLinkActive="active">
+                <a routerLink="/app-views/forum/post-view"><i class="fa fa-lg fa-fw fa-cube"></i>
+                  Delivery Verison Details</a>
+              </li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="fa fa-lg fa-fw fa-shopping-cart"></i> <span
+          class="menu-item-parent"> Lead Management</span></a>
+        <ul>
+          <li routerLinkActive="active">
+            <a routerLink="/e-commerce/orders" title="Orders"> <i class="fa fa-lg fa-fw fa-cube"></i> Appointment</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/e-commerce/products-view" title="Products View"> <i class="fa fa-lg fa-fw fa-cube"></i> Unregistered Leads</a>
+            <ul>
+              <li routerLinkActive="active">
+                <a routerLink="/app-views/projects"><i class="fa fa-lg fa-fw fa-cube"></i>
+                  Leads Details</a>
+              </li>
+              <li routerLinkActive="active">
+                <a routerLink="/app-views/blog"><i class="fa fa-lg fa-fw fa-cube"></i> Leads Allocation</a>
+              </li>
+              <li routerLinkActive="active">
+                <a routerLink="/app-views/gallery"><i class="fa fa-lg fa-fw fa-cube"></i>
+                  Pipeline</a>
+              </li>
+           
+            </ul>
+
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/e-commerce/product-details" title="Products Detail"> <i class="fa fa-lg fa-fw fa-cube"></i> Work Request</a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#"><i class="fa fa-lg fa-fw fa-cog"></i> <span
+          class="menu-item-parent">Setting</span></a>
+        <ul>
+          <li routerLinkActive="active">
+            <a routerLink="/miscellaneous/pricing-tables"><i class="fa fa-lg fa-fw fa-cube"></i>  News Management</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/miscellaneous/invoice"> <i class="fa fa-lg fa-fw fa-cube"></i> Image Management</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/auth/login"><i class="fa fa-lg fa-fw fa-cube"></i>  User Accounts AEGIS-Tech</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/auth/register"> <i class="fa fa-lg fa-fw fa-cube"></i> User Accounts AEGIS</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/auth/forgot-password"> <i class="fa fa-lg fa-fw fa-cube"></i> Main Menu</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/auth/locked"> <i class="fa fa-lg fa-fw fa-cube"></i> Sub Menu</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/miscellaneous/error404"> <i class="fa fa-lg fa-fw fa-cube"></i> Role Setup</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/miscellaneous/error500"><i class="fa fa-lg fa-fw fa-cube"></i> User Authentication</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/miscellaneous/blank"> <i class="fa fa-lg fa-fw fa-cube"></i> Application Versions </a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/miscellaneous/email-template"><i class="fa fa-lg fa-fw fa-cube"></i>  PDC & Weight Settings</a>
+          </li>
+      
+        </ul>
+      </li> -->
+
+      <li aside-chat></li>
+    </ul>
+
+  </nav>
+
+  <sa-minify-menu></sa-minify-menu>
+
+</aside>

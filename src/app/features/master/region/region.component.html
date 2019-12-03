@@ -1,0 +1,76 @@
+<div id="content">
+  <sa-widgets-grid>
+    <div class="row">
+
+      <!-- NEW WIDGET START -->
+      <article class="col-sm-6 col-sm-offset-3">
+
+        <!-- Widget ID (each widget will need unique ID)-->
+        <div sa-widget [colorbutton]="false" [editbutton]="false" [togglebutton]="false" [deletebutton]="false"
+                   [fullscreenbutton]="false" [custombutton]="false" [sortable]="false" color="blueDark">
+                   <header>
+                      <div class="text-center">
+                    <span class="widget-icon"> <i class="fa fa-database txt-color-green"></i> </span>
+                    <h2>&nbsp;Region</h2>
+                  </div>
+                  </header>
+          <div>
+            <div class="widget-body">
+
+              <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="sel1">Zone<span class="errorMessage" style="color:red;">*</span></label>
+                        <select ng-options=" z.ZoneId as z.ZoneDesc for z in allzone" class="form-control" id="" ng-model="region.ZoneId" required>
+                            <option value="" selected>--Select--</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="sel1">Region Name<span class="errorMessage" style="color:red;">*</span></label>
+                        <input type="text" id="regcode" class="form-control" ng-model="region.Region" placeholder="Enter Region Name" required alphaonly />
+                    </div>
+                </div>
+           
+
+            </div>
+
+
+                <div class="row">
+                
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                          <label class="checkbox-inline">
+                              <input type="checkbox" value="" >Is Active?
+                          </label>
+
+
+                      </div>
+                  </div>
+                </div>
+
+                <hr class="hr_basic" />
+                <div class="row ">
+                  <div class="col-sm-12 ">
+                      <a class="btn btn-default pull-right" routerLink="/master/region-list">
+                          <i class="glyphicon glyphicon-arrow-left"></i> &nbsp;&nbsp;Back
+                      </a>
+                      <button class=" btn btn-primary pull-right" type="submit" style="margin-right:10px;" >
+                          <i class="glyphicon glyphicon-send"></i> &nbsp;&nbsp;Submit
+                      </button>
+                      <!-- <button type="button" name="" class="btn btn-primary btn-right pull-right" *ngIf="loadershow">
+                          <i class="fa fa-cog fa-spin fa-fw" aria-hidden="true"></i> Loading
+                      </button> -->
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+
+  </sa-widgets-grid>
+</div>

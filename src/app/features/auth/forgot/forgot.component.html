@@ -1,0 +1,52 @@
+<header id="header" class="animated fadeInDown">
+
+  <div id="logo-group">
+    <span id="logo"> <img src="assets/img/logo.gif" style="width:65px;" alt="SmartAdmin"> </span>
+  </div>
+  <div class="tollfree_wrapper1 content__middle text-center pull-right">
+    <div class="mid_toll_free">
+        <i class="fa fa-phone color-orange phone fleft"></i> <div class="fright toll_number"> Toll Free Number <span class="toll_number num login_toll">  00000000 </span></div>
+    </div>
+</div>
+  <!-- <span id="extr-page-header-space"> <a routerLink="/auth/login" class="btn btn-danger">LogIn</a> </span> -->
+
+</header>
+<div id="main" role="main" class="animated fadeInDown">
+
+  <div id="content" class="container">
+
+    <div class="row">
+   
+      
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-sm-offset-4">
+        <div class="well no-padding">
+          <form id="login-form" class="smart-form client-form">
+            <header>
+              Forgot Password
+            </header>
+
+            <fieldset>
+
+              <section>
+                <label class="label">Enter your email address</label>
+                <label class="input"> <i class="icon-append fa fa-envelope"></i>
+                  <input type="email" name="email">
+                  <b class="tooltip tooltip-top-right"><i class="fa fa-envelope txt-color-teal"></i> Please enter email address for password reset</b></label>
+              </section>
+
+            </fieldset>
+            <footer>
+              <button (click)="submit($event)" class="btn btn-primary">
+                <i class="fa fa-refresh"></i> Reset Password
+              </button>
+            </footer>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+

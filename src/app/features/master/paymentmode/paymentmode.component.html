@@ -1,0 +1,98 @@
+<div id="content">
+  <sa-widgets-grid>
+    <div class="row">
+
+      <!-- NEW WIDGET START -->
+      <article class="col-sm-6 col-sm-offset-3">
+
+        <!-- Widget ID (each widget will need unique ID)-->
+        <div sa-widget [colorbutton]="false" [editbutton]="false" [togglebutton]="false" [deletebutton]="false"
+                   [fullscreenbutton]="false" [custombutton]="false" [sortable]="false" color="blueDark">
+                   <header>
+                      <div class="text-center">
+                    <span class="widget-icon"> <i class="fa fa-database txt-color-green"></i> </span>
+                    <h2>&nbsp;Payment Mode</h2>
+                  </div>
+                  </header>
+          <div>
+            <div class="widget-body">
+
+              <div class="row">
+                <div class="col-sm-8">
+                    <div class="form-group">
+                        <label for="sel1">Payment Mode<span class="errorMessage" style="color:red;">*</span></label>
+                        <input type="text" class="form-control" id="pmode" placeholder="Enter Payment Mode"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="form-group">
+                        <label for="sel1">Payment Mode Description<span class="errorMessage" style="color:red;">*</span></label>
+                        <input type="text" class="form-control" placeholder="Enter Payment Mode Description"  />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="form-group">
+                        <label for="sel1">Transaction Charges<span class="errorMessage" style="color:red;">*</span></label>
+                        <select class="form-control" id="sel1" ng-model="pay.TrCharges" required>
+                            <option value="" selected>--Select--</option>
+                            <option value="N"> Not Applicable </option>
+                            <option value="I"> Inclusive </option>
+                            <option value="E"> Exclusive </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="form-group">
+                        <label for="sel1">Bank Name<span class="errorMessage" style="color:red;">*</span></label>
+                        <select class="form-control" id="sel1"  >
+                            <option value="" selected>--Select--</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="" >Is Active?
+                        </label>
+
+
+                    </div>
+                </div>
+            </div>
+
+                <hr class="hr_basic" />
+                    <div class="row ">
+                        <div class="col-sm-10" ng-show="divshow">
+                            <button class="pull-right btn btn-primary" type="submit" >
+                                <i class="glyphicon glyphicon-send"></i> &nbsp;&nbsp;Submit
+                            </button>
+                        </div>
+                        <div class="col-sm-1" ng-show="divshow">
+                            <a class="btn btn-default" routerLink="/master/paymentmode-list">
+                                <i class="glyphicon glyphicon-arrow-left"></i> &nbsp;&nbsp;Back
+                            </a>
+                        </div>
+                        <!-- <div class="col-sm-10" ng-show="divhide">
+                            <button type="button" name="" class="pull-right btn btn-primary">
+                                <i class="fa fa-cog fa-spin fa-fw" aria-hidden="true"></i> Loading
+                            </button>
+                        </div> -->
+                    </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+
+  </sa-widgets-grid>
+</div>

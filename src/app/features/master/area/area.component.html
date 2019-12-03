@@ -1,0 +1,86 @@
+<div id="content">
+  <sa-widgets-grid>
+    <div class="row">
+
+      <!-- NEW WIDGET START -->
+      <article class="col-sm-6 col-sm-offset-3">
+
+        <!-- Widget ID (each widget will need unique ID)-->
+        <div sa-widget [colorbutton]="false" [editbutton]="false" [togglebutton]="false" [deletebutton]="false"
+                   [fullscreenbutton]="false" [custombutton]="false" [sortable]="false" color="blueDark">
+                   <header>
+                      <div class="text-center">
+                    <span class="widget-icon"> <i class="fa fa-database txt-color-green"></i> </span>
+                    <h2>&nbsp;Area</h2>
+                  </div>
+                  </header>
+          <div>
+            <div class="widget-body">
+
+                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label for="sel1">City Name<span class="errorMessage" style="color:red;">*</span></label>
+                                            <select class="form-control" id="sel1" ng-options="d.DistrictCode as d.DistrictName for d in getdistrict1" ng-model="Taluka.DistrictCode" required>
+                                                <option value="" selected>--Select City--</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-sm-5">
+                                        <div class="form-group">
+                                            <label>Area Name<span class="errorMessage" style="color:red;">*</span></label>
+
+                                            <input type="text" class="form-control" placeholder="Enter Area Name" ng-model="Taluka.TalukaName" required />
+                                        </div>
+                                    </div>
+                                        <div class="col-sm-3">
+                                            <div class="form-group">
+                                                <label>Pin code<span class="errorMessage" style="color:red;">*</span></label>
+
+                                                <input type="text" class="form-control" placeholder="Enter Pin code" ng-model="Taluka.TalukaName" required />
+                                            </div>
+                                        </div>
+                                 
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" value="" ng-true-value="'Y'" ng-false-value="'N'" ng-model="Taluka.Isactive">Is Active?
+
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr class="hr_basic" />
+                                <div class="row ">
+                                    <div class="col-sm-10" ng-show="divshow">
+                                        <button class="pull-right btn btn-primary" type="submit"  >
+                                            <i class="glyphicon glyphicon-send"></i> &nbsp;&nbsp;Submit
+                                        </button>
+                                    </div>
+                                    <div class="col-sm-1" ng-show="divshow">
+                                        <a class="btn btn-default" routerLink="/master/area-list">
+                                            <i class="glyphicon glyphicon-arrow-left"></i> &nbsp;&nbsp;Back
+                                        </a>
+                                    </div>
+                                    <!-- <div class="col-sm-10 " ng-show="divhide">
+                                        <button type="button" name="" class="pull-right btn btn-primary">
+                                            <i class="fa fa-cog fa-spin fa-fw" aria-hidden="true"></i> Loading
+                                        </button>
+                                    </div> -->
+                                </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+
+  </sa-widgets-grid>
+</div>

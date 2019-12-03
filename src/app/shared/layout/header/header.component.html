@@ -1,0 +1,79 @@
+
+<style>
+.toll_number {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #d9d8d8;
+}
+  </style>
+<header id="header">
+  <div id="logo-group">
+
+    <!-- PLACE YOUR LOGO HERE -->
+    <span id="logo"> <img src="assets/img/logo.gif" alt="SmartAdmin" style="width:45px;"> </span>
+  </div>
+  <!-- <sa-recent-projects></sa-recent-projects> -->
+  <!-- pulled right: nav area -->
+  <div class="col-sm-4 col-md-8 col-lg-9  hidden-xs ">
+      <div  class="text-center toll">
+          <div class="welcome" style="color:#fff;">Welcome, <span>Alley gas services.</span></div>
+      </div>
+    </div>
+  <div class="pull-right">
+
+    <sa-collapse-menu></sa-collapse-menu>
+
+    <!-- #MOBILE -->
+    <!-- Top menu profile link : this shows only when top menu is active -->
+    <ul id="mobile-profile-img" class="header-dropdown-list hidden-xs padding-5 pull-right">
+      <li class="">
+        <a href="#" class="dropdown-toggle no-margin userdropdown" data-toggle="dropdown">
+          <img src="assets/img/avatars/sunny.png" alt="John Doe" class="online"/>
+        </a>
+        <ul class="dropdown-menu pull-right">
+          <li>
+            <a (click)="(null)" class="padding-10 padding-top-0 padding-bottom-0"><i
+              class="fa fa-cog"></i> Change password</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a routerLink="/app-views/profile" class="padding-10 padding-top-0 padding-bottom-0"> <i
+              class="fa fa-user"></i>
+              Upload Photo</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a (click)="LogOut()" class="padding-10 padding-top-5 padding-bottom-5" data-action="userLogout"><i
+              class="fa fa-sign-out fa-lg"></i> <strong><u>L</u>ogout</strong></a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- logout button -->
+    <sa-logout></sa-logout>
+    <!-- end logout button -->
+
+    <!-- search mobile button (this is hidden till mobile view port) -->
+    <div id="search-mobile" class="btn-header transparent pull-right">
+      <span> <a (click)="toggleSearchMobile()" title="Search"><i class="fa fa-search"></i></a> </span>
+    </div>
+    <!-- end search mobile button -->
+
+    <!-- input: search field
+    <form #searchForm="ngForm" (ngSubmit)="onSubmit()" class="header-search pull-right">
+      <input id="search-fld" type="text" name="param" required
+             placeholder="Find reports and more">
+      <button type="submit">
+        <i class="fa fa-search"></i>
+      </button>
+      <a id="cancel-search-js" (click)="toggleSearchMobile()" title="Cancel Search"><i class="fa fa-times"></i></a>
+    </form>-->
+    <sa-full-screen></sa-full-screen> 
+  </div>
+  <div class="tollfree_wrapper pull-right hidden-sm hidden-xs" style="margin-top: 12px;">
+      <i class="fa fa-phone color-orange phone fleft tp_toll"></i> <div class="fright toll_number"> <span class="toll_number num"> 00000000  </span></div>
+  </div>
+  <!-- end pulled right: nav area -->
+
+</header>

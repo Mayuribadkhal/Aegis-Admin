@@ -1,0 +1,122 @@
+<div id="content">
+  <sa-widgets-grid>
+    <div class="row">
+
+      <!-- NEW WIDGET START -->
+      <article class="col-sm-6 col-sm-offset-3">
+
+        <!-- Widget ID (each widget will need unique ID)-->
+        <div sa-widget [colorbutton]="false" [editbutton]="false" [togglebutton]="false" [deletebutton]="false"
+                   [fullscreenbutton]="false" [custombutton]="false" [sortable]="false" color="blueDark">
+                   <header>
+                      <div class="text-center">
+                    <span class="widget-icon"> <i class="fa fa-database txt-color-green"></i> </span>
+                    <h2>&nbsp;Transport Mode</h2>
+                  </div>
+                  </header>
+          <div>
+            <div class="widget-body">
+
+              <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="sel1">Transport Name<span style="color:red;">*</span></label>
+                        <input type="text" class="form-control" ng-model="Transport.TransportDesc" alphaonly="alphaonly" placeholder="Enter Transport Name" required />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="sel1">Address<span style="color:red;">*</span></label>
+                        <input type="text" class="form-control transport_space" ng-model="Transport.TransportAdd1" placeholder="Enter Address1" required /><br>
+                        <input type="text" class="form-control transport_space" ng-model="Transport.TransportAdd2" placeholder="Enter Address2" /><br>
+                        <input type="text" class="form-control" ng-model="Transport.TransportAdd3" placeholder="Enter Address3" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="sel1">City<span class="errorMessage" style="color:red;">*</span></label>
+                        <input type="text" class="form-control" ng-model="Transport.TransportCity" placeholder="Enter City" required />
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="sel1">Contact Person<span class="errorMessage" style="color:red;">*</span></label>
+                        <input type="text" class="form-control" ng-model="Transport.TransportPerson" alphaonly="alphaonly" placeholder="Enter Contact Person" required />
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="sel1">Mobile No.<span class="errorMessage" style="color:red;">*</span></label>
+                        <input type="text" class="form-control" ng-model="Transport.MobileNo" placeholder="Enter Mobile No." ng-pattern="/^(?:\s*\d{10}\s*(?:,|$))+$/" minlength="10" maxlength="10"
+                               oninvalid="this.setCustomValidity('Enter 10 digits mobile number')" onchange="setCustomValidity('')" oninput="setCustomValidity(' ')" numericonly required />
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="sel1">Phone No.</label>
+                        <input type="text" class="form-control" ng-model="Transport.PhoneNo" placeholder="Enter Phone No." minlength="11" maxlength="11"
+                               numericonly />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="sel1">Email<span class="errorMessage" style="color:red;">*</span></label>
+                        <input type="text" class="form-control" id="emailid" ng-model="Transport.EmailAdd" placeholder="Enter Email" ng-blur="myFunction()" pattern='[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$' required />
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label class="checkbox-inline">
+                            <input name="isactive" ng-model="Transport.IsActive" ng-true-value="'Y'" ng-false-value="'N'" type="checkbox"> Is Active?
+
+                        </label>
+
+
+                    </div>
+                </div>
+            </div>
+
+                <hr class="hr_basic" />
+                    <div class="row ">
+                        <div class="col-sm-10" ng-show="divshow">
+                            <button class="pull-right btn btn-primary" type="submit" >
+                                <i class="glyphicon glyphicon-send"></i> &nbsp;&nbsp;Submit
+                            </button>
+                        </div>
+                        <div class="col-sm-1" ng-show="divshow">
+                            <a class="btn btn-default" routerLink="/master/transportmode-list">
+                                <i class="glyphicon glyphicon-arrow-left"></i> &nbsp;&nbsp;Back
+                            </a>
+                        </div>
+                        <!-- <div class="col-sm-10" ng-show="divhide">
+                            <button type="button" name="" class="pull-right btn btn-primary">
+                                <i class="fa fa-cog fa-spin fa-fw" aria-hidden="true"></i> Loading
+                            </button>
+                        </div> -->
+                    </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+
+  </sa-widgets-grid>
+</div>

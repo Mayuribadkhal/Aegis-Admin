@@ -1,0 +1,80 @@
+<div id="content">
+  <sa-widgets-grid>
+    <div class="row">
+
+      <!-- NEW WIDGET START -->
+      <article class="col-sm-6 col-sm-offset-3">
+
+        <!-- Widget ID (each widget will need unique ID)-->
+        <div sa-widget [colorbutton]="false" [editbutton]="false" [togglebutton]="false" [deletebutton]="false"
+                   [fullscreenbutton]="false" [custombutton]="false" [sortable]="false" color="blueDark">
+                   <header>
+                      <div class="text-center">
+                    <span class="widget-icon"> <i class="fa fa-database txt-color-green"></i> </span>
+                    <h2>&nbsp;Manufacture</h2>
+                  </div>
+                  </header>
+          <div>
+            <div class="widget-body">
+              <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Manufacture Name<span class="errorMessage" style="color:red;">*</span></label>
+                        <input type="text" id="rolecodeid" class="form-control" placeholder="Enter Manufacture Name" ng-model="manufature.ManfactName" alphaonly required />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Address Line 1<span class="errorMessage" style="color:red;">*</span></label>
+                        <input type="text" id="rolecodeid" class="form-control" placeholder="Address Line 1" ng-model="manufature.AddressLine1" required />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Address Line 2</label>
+                        <input type="text" id="rolecodeid" class="form-control" placeholder="Address Line 2" ng-model="manufature.AddressLine2" required />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Address Line 3</label>
+                        <input type="text" id="rolecodeid" class="form-control" placeholder="Address Line 3" ng-model="manufature.AddressLine3" required />
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label>Pin Code<span class="errorMessage" style="color:red;">*</span></label>
+                        <input type="text" id="rolecodeid" class="form-control" placeholder="Pin Code" ng-model="manufature.PinCode" minlenght="6" maxlength="6" required />
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group mar-top">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="" ng-true-value="'Y'" ng-false-value="'N'" ng-model="manufature.IsActive" >Is Active?
+                        </label>
+                    </div>
+                </div>
+            </div>
+                <hr class="hr_basic" />
+                <div class="row ">
+                  <div class="col-sm-12 ">
+                      <a class="btn btn-default pull-right" routerLink="/master/manufacture-list">
+                          <i class="glyphicon glyphicon-arrow-left"></i> &nbsp;&nbsp;Back
+                      </a>
+                      <button class=" btn btn-primary pull-right" type="submit" style="margin-right:10px;" >
+                          <i class="glyphicon glyphicon-send"></i> &nbsp;&nbsp;Submit
+                      </button>
+                      <!-- <button type="button" name="" class="btn btn-primary btn-right pull-right" *ngIf="loadershow">
+                          <i class="fa fa-cog fa-spin fa-fw" aria-hidden="true"></i> Loading
+                      </button> -->
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+
+  </sa-widgets-grid>
+</div>
