@@ -144,3 +144,11 @@
     background-image: none;
     background-color: #415676;
 }
+
+.marg-right{
+    margin-right:10px;
+}
+
+.errorMessage{
+    color:red;
+}

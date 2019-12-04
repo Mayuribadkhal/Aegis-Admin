@@ -63,8 +63,6 @@ export class SmartMenuDirective implements OnInit, AfterViewInit {
     setTimeout(()=>{
       this.processLayout(this.layoutService.store)
     }, 200)
-
-
   }
 
   ngOnDestroy() {
